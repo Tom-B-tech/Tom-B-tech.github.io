@@ -337,6 +337,11 @@ ul{list-style:none;}
 }
 
 .projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+@media (min-width:861px){
+  .projects-grid{grid-template-columns:repeat(6,1fr);}
+  .project-card{grid-column:span 2;}
+  .project-card:last-child:nth-child(3n+1){grid-column:3 / span 2;}
+}
 .project-card{
   position:relative;background:var(--bg);border:1px solid var(--border);
   border-radius:var(--radius) var(--radius) 4px var(--radius);

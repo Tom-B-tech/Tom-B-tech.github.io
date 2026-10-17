@@ -73,5 +73,18 @@ var PROJECTS = [
     highlights: [],
     stack: ["Gemini 2.5 Flash", "Vision models", "Node.js", "Data analysis"],
     links: []
+  },
+  {
+    id: "fish-tank-software",
+    title: "Fish Tank Management Software",
+    tagline: "Software for managing fish tanks. Details coming soon.",
+    category: "tool",
+    year: "Fall 2026",
+    status: "In progress",
+    image: "assets/hobby-pea-puffer.jpg",
+    description: [],
+    highlights: [],
+    stack: [],
+    links: []
   }
 ];
