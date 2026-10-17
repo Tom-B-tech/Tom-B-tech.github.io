@@ -21,7 +21,7 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/fonts.css?v=1">
-<link rel="stylesheet" href="css/style.css?v=52">
+<link rel="stylesheet" href="css/style.css?v=54">
 </head>
 <body>
 
@@ -86,6 +86,10 @@
           <path d="M22 30 V70 a6 6 0 0 1 -12 0 V18 a14 14 0 0 1 28 0 V76 a11 11 0 0 1 -22 0 V40" fill="none" stroke="url(#clipMetal)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M22 30 V70 a6 6 0 0 1 -12 0 V18 a14 14 0 0 1 28 0 V76 a11 11 0 0 1 -22 0 V40" fill="none" stroke="rgba(255,255,255,.55)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" transform="translate(-.8 -.8)"/>
         </symbol>
+        <symbol id="paperclip-front" viewBox="0 0 48 92">
+          <path d="M22 30 V70 a6 6 0 0 1 -12 0 V18" fill="none" stroke="url(#clipMetal)" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M22 30 V70 a6 6 0 0 1 -12 0 V18" fill="none" stroke="rgba(255,255,255,.55)" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round" transform="translate(-.8 -.8)"/>
+        </symbol>
       </defs>
     </svg>
     <div class="hero-board">
@@ -96,9 +100,12 @@
       <i class="pin" style="left:858px;top:33px"></i><i class="pin" style="left:118px;top:403px"></i><i class="pin" style="left:858px;top:383px"></i>
 
       <figure class="hero-photo">
-        <svg class="paperclip clip-photo" aria-hidden="true"><use href="#paperclip"/></svg>
-        <img src="assets/photo.jpg" alt="Thomas Ballard" width="800" height="800">
-        <figcaption>tom</figcaption>
+        <svg class="paperclip clip-photo clip-back" aria-hidden="true"><use href="#paperclip"/></svg>
+        <div class="photo-paper">
+          <img src="assets/photo.jpg" alt="Thomas Ballard" width="800" height="800">
+          <figcaption>tom</figcaption>
+        </div>
+        <svg class="paperclip clip-photo clip-front" aria-hidden="true"><use href="#paperclip-front"/></svg>
       </figure>
 
       <div class="hero-card">
@@ -117,7 +124,8 @@
             <a href="#projects" class="btn btn-primary">Browse the Entries</a>
           </div>
         </div>
-        <svg class="paperclip clip-card" aria-hidden="true"><use href="#paperclip"/></svg>
+        <svg class="paperclip clip-card clip-back" aria-hidden="true"><use href="#paperclip"/></svg>
+        <svg class="paperclip clip-card clip-front" aria-hidden="true"><use href="#paperclip-front"/></svg>
       </div>
 
       <div class="badge b1"><div><small>UIUC</small><b>2026</b><small>SYMPOSIUM</small></div></div>
