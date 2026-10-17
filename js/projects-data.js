@@ -68,13 +68,9 @@ var PROJECTS = [
     year: "Fall 2026",
     status: "In progress",
     image: "assets/portfolio-ai-thumb.jpg?v=1",
-    description: [
-      "In the meantime, you can look at the results on the [live dashboard](assets/portfolio-ai-dashboard.html)."
-    ],
+    description: [],
     highlights: [],
     stack: ["Gemini 2.5 Flash", "Vision models", "Node.js", "Data analysis"],
-    links: [
-      { label: "View live dashboard", url: "assets/portfolio-ai-dashboard.html", primary: true }
-    ]
+    links: []
   }
 ];
