@@ -17,12 +17,13 @@ var PROJECTS = [
     status: "Completed",
     image: "assets/cognify-web-demo.jpg",
     description: [
-      "In a research collaboration at Illinois, I worked under graduate student Vatsal Tailor to build Cognify: an agent that sits on top of a pre-computed dementia classifier and explains its predictions in clinician-readable form. I built the explanation and reasoning layer — not the classifier itself — using a ReAct (Reasoning + Acting) architecture with 11 purpose-built clinical tools.",
+      "In a research collaboration at Illinois, I worked under graduate student Vatsal Tailor on Cognify: an agent that sits on top of a pre-computed dementia classifier and explains its predictions in clinician-readable form. The classifier itself is not my work; my side was the agent that explains it, a ReAct (Reasoning + Acting) design with 11 purpose-built clinical tools. One of my contributions was a compounding feature: after a good run, the agent's insight can be added to the knowledge base, so later runs can build on it.",
       "The agent queries pre-computed diagnostic results for 6,212 synthetic patients, retrieves per-patient SHAP feature attributions, searches a curated ~375KB clinical knowledge base, and produces a structured 4-section clinical note — grounded entirely in tool outputs, never fabricated.",
       "This is a research prototype, not a validated medical device, and every patient record it reasons over is synthetic."
     ],
     highlights: [
       "Built an 11-tool ReAct agent (Python + a local LLM via Ollama) that explains classifier predictions using SHAP attributions, brain volumetrics, and a curated clinical knowledge base",
+      "Added a compounding feature: after a good run, the agent's insight is filed into the knowledge base (with a review step) for later runs to draw on",
       "Designed an unsourced-claim guard that detects and strips fabricated patient measurements from the LLM's output whenever the sourcing tool was never actually called",
       "Built value-meaning resolution so counter-intuitive coded clinical fields (e.g. a field coded 0 meaning \"Abnormal\") can't be misread by the model",
       "Added conflict detection across 4 different MoCA cognitive-score variants, which frequently disagree with each other",
