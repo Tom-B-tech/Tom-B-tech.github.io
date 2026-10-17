@@ -13,7 +13,7 @@ var PROJECTS = [
     title: "Clinical Decision-Support Agent",
     tagline: "A tool-calling LLM agent that explains dementia-classifier predictions to clinicians — built under a UIUC graduate researcher, with safety guards against fabricated claims.",
     category: "research",
-    year: "Fall 2026",
+    year: "Summer–Fall 2026",
     status: "Completed",
     image: "assets/cognify-web-demo.jpg",
     description: [
