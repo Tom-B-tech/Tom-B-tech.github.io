@@ -4,4 +4,6 @@ Inter - Copyright The Inter Project Authors (https://github.com/rsms/inter)
 JetBrains Mono - Copyright The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
 Cinzel Decorative - Copyright The Cinzel Decorative Project Authors (https://github.com/NDISCOVER/Cinzel-Decorative)
 
+Caveat - Copyright The Caveat Project Authors (https://github.com/googlefonts/caveat)
+
 Latin subsets served via Google Fonts, hosted here instead of loading them from Google.
