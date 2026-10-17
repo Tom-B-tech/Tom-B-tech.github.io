@@ -23,8 +23,8 @@
   ];
 
   var h = '<div class="tl-row tl-axisrow"><div class="tl-lab"></div><div class="tl-axis" aria-hidden="true">' +
-    '<span style="--at:0;padding-left:0"><span class="tl-long">Aug </span>’23</span><span style="--at:5">2024</span><span style="--at:17">2025</span>' +
-    '<span style="--at:29">2026</span><span style="--at:41">2027</span></div></div>';
+    '<span style="--at:0;padding-left:0"><span class="tl-long">Aug </span>’23</span><span style="--at:5"><span class="tl-yr">20</span><span class="tl-ap">’</span>24</span><span style="--at:17"><span class="tl-yr">20</span><span class="tl-ap">’</span>25</span>' +
+    '<span style="--at:29"><span class="tl-yr">20</span><span class="tl-ap">’</span>26</span><span style="--at:41"><span class="tl-yr">20</span><span class="tl-ap">’</span>27</span></div></div>';
   rows.forEach(function (r) {
     var m = '';
     r.bars.forEach(function (x) {
