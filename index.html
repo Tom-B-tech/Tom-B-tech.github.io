@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thomas Ballard — Portfolio</title>
+<meta name="description" content="Thomas Ballard — high school researcher working in AI, robotics &amp; nuclear science.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="theme-color" content="#211b10">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Thomas Ballard — Portfolio">
+<meta property="og:description" content="High school researcher working in AI, robotics &amp; nuclear science.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts.css?v=1">
+<link rel="stylesheet" href="css/style.css?v=46">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <div class="nav-brand">
+      <a href="#top" class="logo">TB<span class="logo-dot">.</span></a>
+    </div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" data-nav>Field Notes</a>
+      <a href="#projects" data-nav>Log Entries</a>
+      <a href="#resume" data-nav>Timeline</a>
+      <a href="#contact" data-nav>Transmit</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="ink-strip" aria-hidden="true">
+    <svg id="inkSvg">
+      <defs>
+        <linearGradient id="inkBarrel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4a4d"/><stop offset=".45" stop-color="#1c1c1e"/><stop offset="1" stop-color="#050505"/></linearGradient>
+        <linearGradient id="inkGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff0c4"/><stop offset=".55" stop-color="#e2bb62"/><stop offset="1" stop-color="#a98332"/></linearGradient>
+      </defs>
+      <path id="inkLine"/>
+      <circle id="inkPool" r="2.2"/>
+      <g id="inkPen"><g transform="scale(.42)">
+        <path d="M21 -6.6 L40 -5.8 L40 5.8 L21 6.6 Z" fill="#0d0d0e"/>
+        <path d="M23 -5 L38 -4.5" stroke="rgba(255,255,255,.28)" stroke-width="1.2" stroke-linecap="round"/>
+        <path d="M0 0 C3 -1.4 8 -4.6 13 -6.4 C16 -7.3 19 -7.4 22.5 -7 L22.5 7 C19 7.4 16 7.3 13 6.4 C8 4.6 3 1.4 0 0 Z" fill="url(#inkGold)" stroke="#8a6a25" stroke-width=".8" stroke-linejoin="round"/>
+        <path d="M.4 0 L11.2 0" stroke="#5c4519" stroke-width="1" stroke-linecap="round"/>
+        <circle cx="12.4" cy="0" r="1.5" fill="#5c4519"/>
+        <path d="M14.5 -3.6 Q18.5 -2.4 21 -1.4 M14.5 3.6 Q18.5 2.4 21 1.4" fill="none" stroke="#a98332" stroke-width=".8" stroke-linecap="round"/>
+        <rect x="39.6" y="-6.4" width="2.4" height="12.8" fill="url(#inkGold)"/>
+        <path d="M42 -6.4 L96 -6.8 Q102 -6.8 102 0 Q102 6.8 96 6.8 L42 6.4 Z" fill="url(#inkBarrel)"/>
+        <path d="M45 -4.4 L92 -4.9" stroke="rgba(255,255,255,.4)" stroke-width="1.6" stroke-linecap="round"/>
+        <rect x="88" y="-7" width="2" height="14" fill="url(#inkGold)"/>
+        <rect x="92" y="-6.9" width="1.2" height="13.8" fill="url(#inkGold)"/>
+        <path d="M96 -3 L100 -3 M96 3 L100 3" stroke="#e2bb62" stroke-width=".9"/>
+      </g></g>
+    </svg>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="particles" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <p class="hero-stamp reveal"><span class="hero-stamp-dot"></span>FIELD LOG — ENTRY <span id="heroEntry">01</span> · <span id="heroDate"></span></p>
+      <p class="hero-eyebrow reveal">Uni High Junior · Open to research &amp; collaboration</p>
+      <h1 class="hero-title reveal">Thomas Ballard</h1>
+      <p class="hero-subtitle reveal">
+        <span class="typewriter" id="typewriter"></span><span class="cursor">|</span>
+      </p>
+      <p class="hero-desc reveal">
+        I'm a junior at University Laboratory High School, researching AI, robotics &amp;
+        energy — with interests in nuclear engineering and computer science.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">Browse the Entries</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <p class="section-tag reveal">LOG 01 · FIELD NOTES</p>
+      <h2 class="section-title reveal">Field notes</h2>
+
+      <div class="about-grid">
+        <div class="avatar-wrap reveal">
+          <div class="avatar">
+            <img src="assets/photo.jpg" alt="Thomas Ballard" loading="lazy">
+          </div>
+          <ul class="about-facts">
+            <li><span>School</span><strong>Uni High · Junior</strong></li>
+            <li><span>Based in</span><strong>Champaign-Urbana area, IL</strong></li>
+            <li><span>Focus</span><strong>AI, robotics &amp; energy</strong></li>
+            <li><span>Member</span><strong>American Nuclear Society</strong></li>
+            <li><span>Open to</span><strong>Research &amp; collaboration</strong></li>
+          </ul>
+          <p class="favorite-book"><span>Favorite book</span><em>The Pearl</em> — John Steinbeck</p>
+          <blockquote class="about-quote">
+            <p>&ldquo;For every man in the world functions to the best of his ability, and no one does less than his best, no matter what he may think about it.&rdquo;</p>
+            <cite>— John Steinbeck, <em>The Pearl</em>, ch. 4</cite>
+          </blockquote>
+        </div>
+
+        <div class="about-body reveal">
+          <p class="about-text">
+            I'm a junior at University Laboratory High School (Uni High), seeking an
+            engineering-based premedical future with interests in nuclear engineering
+            and computer science. I love to ask and answer questions across disciplines
+            including philosophy, nuclear engineering, computer science, biology, and the
+            arts. I care about advancing current nuclear research, responsibly using AI
+            in medicine, and volunteering for my community.
+          </p>
+          <details class="about-more">
+            <summary><span class="more-open">More about me</span><span class="more-close">Show less</span></summary>
+            <p class="about-text">
+              Away from research, I've volunteered around 100 hours at Carle Foundation
+              Hospital across several different departments, spent summer 2026 at UIUC's
+              nuclear camp, and took a philosophy course (PHI 103) at Parkland College.
+              I've studied Latin for the past three years, earning three straight gold
+              medals on the National Latin Exam. I also do Science Olympiad — four
+              regional golds as a JV competitor in 2025–26, and varsity in 2026–27. This
+              year I founded and lead a clean-up club at school, combining building cleanups
+              with environmental litter pick-ups. In the first semester of sophomore year, I wrote for
+              Uni High's school newspaper, <em>The Gargoyle</em>, in a journalism class, including pieces on the
+              <a class="text-link" href="https://gargoyle.uni.illinois.edu/6164/features/new-kenney-gym-floor-keeps-students-safer-and-looks-better/" target="_blank" rel="noopener">new Kenney Gym floor</a>
+              and the <a class="text-link" href="https://gargoyle.uni.illinois.edu/6359/sports/the-uni-high-boys-soccer-team-wraps-up-their-season/" target="_blank" rel="noopener">boys soccer season</a>.
+            </p>
+
+            <h3 class="about-sub">Hobbies</h3>
+            <ul class="about-tags">
+              <li>Writing &amp; fountain pens</li>
+              <li>Amateur astronomy</li>
+              <li>Fish keeping</li>
+              <li>Philosophy</li>
+              <li>Tennis</li>
+              <li>Basketball</li>
+              <li>Photography</li>
+              <li>Alto saxophone</li>
+            </ul>
+
+            <h3 class="about-sub">Skills &amp; tools</h3>
+            <ul class="about-tags">
+              <li>Machine learning</li>
+              <li>Java</li>
+              <li>LLMs &amp; tool-use</li>
+              <li>Data analysis</li>
+              <li>Soft robotics</li>
+              <li>Git &amp; GitHub</li>
+              <li>Research &amp; presenting</li>
+              <li>Basic Life Support certified</li>
+            </ul>
+
+            <h3 class="about-sub">From my camera</h3>
+            <div class="photo-strip">
+              <figure class="photo-card">
+                <img src="assets/hobby-fish.jpg" loading="lazy"
+                     alt="A black-and-white fish with a dark saddle marking, swimming in deep blue water">
+                <figcaption>One Spot Foxface Rabbitfish</figcaption>
+              </figure>
+              <figure class="photo-card">
+                <img src="assets/hobby-pea-puffer.jpg" loading="lazy"
+                     alt="A small pea puffer fish hovering among green and red aquarium plants">
+                <figcaption>Pea Puffer</figcaption>
+              </figure>
+              <figure class="photo-card">
+                <img src="assets/hobby-dwarf-crayfish.jpg" loading="lazy"
+                     alt="A pale orange dwarf crayfish facing the camera on dark gravel">
+                <figcaption>Dwarf Crayfish</figcaption>
+              </figure>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-cork" id="projects">
+    <div class="section-inner">
+      <p class="section-tag reveal">LOG 02 · ENTRIES</p>
+      <h2 class="section-title reveal">Log entries</h2>
+
+      <div class="filter-bar reveal" id="filterBar">
+        <!-- Filter buttons are generated from projects-data.js -->
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <noscript><p>Projects need JavaScript to display. Please enable it to view them.</p></noscript>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT DETAIL MODAL -->
+  <dialog class="project-dialog" id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-header">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close project">✕</button>
+    </div>
+    <div class="dialog-scroll" id="dialogBody"></div>
+  </dialog>
+
+  <!-- RESUME -->
+  <section class="section" id="resume">
+    <div class="section-inner">
+      <p class="section-tag reveal">LOG 03 · TIMELINE</p>
+      <h2 class="section-title reveal">Mission timeline</h2>
+
+      <div class="tl reveal" id="timeline"><div class="tl-now"></div></div>
+      <div class="tl-key reveal"><span><i class="b"></i>bar: lasted this long (pointed = still going)</span><span><i class="d"></i>dot: happened once</span><span>Colors match the notes on the left</span></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section-alt" id="contact">
+    <div class="section-inner contact-inner">
+      <p class="section-tag reveal">LOG 04 · TRANSMIT</p>
+      <h2 class="section-title reveal">Open a channel</h2>
+      <p class="contact-desc reveal">
+        Have a project in mind, a question, or just want to say hi? My inbox is open.
+      </p>
+      <div class="contact-links reveal">
+        <a href="#contact" class="contact-link" id="emailLink" data-u="tyb" data-d="illinois.edu">
+          <span class="contact-icon">✉</span> Email
+        </a>
+        <a href="https://github.com/Tom-B-tech" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">⌥</span> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/thomas-ballard-8a093a439" target="_blank" rel="noopener" class="contact-link">
+          <span class="contact-icon">in</span> LinkedIn
+        </a>
+      </div>
+      <button class="copy-email reveal" id="copyEmail" type="button" data-u="tyb" data-d="illinois.edu">Copy email address</button>
+      <noscript><p class="contact-desc">Turn on JavaScript to see my email address, or reach me on LinkedIn.</p></noscript>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Thomas Ballard. Made with Claude.</p>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/projects-data.js?v=25"></script>
+<script src="js/cognify-demo-data.js?v=2"></script>
+<script src="js/script.js?v=26"></script>
+<script src="js/timeline.js?v=4"></script>
+</body>
+</html>
