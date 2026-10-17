@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tom-b-tech.github.io/sitemap.xml
+Sitemap: https://thomasyuballard.web.illinois.edu/sitemap.xml
