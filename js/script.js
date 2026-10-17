@@ -193,7 +193,7 @@
           '<span class="project-year">' + esc(project.year || '') + '</span>' +
         '</div>' +
         '<h3>' + esc(project.title) + '</h3>' +
-        '<p>' + esc(project.tagline || '') + '</p>' +
+        '<p>' + inline(project.tagline || '') + '</p>' +
         '<div class="project-tags">' + tags + '</div>' +
         '<div class="card-actions">' +
           '<button class="btn btn-ghost btn-sm" type="button" data-action="details">Learn More →</button>' +
@@ -208,7 +208,7 @@
     var desc = (project.description || []).map(function (p) { return '<p>' + inline(p) + '</p>'; }).join('');
     var highlights = (project.highlights || []).length
       ? '<h4>Highlights</h4><ul class="dialog-highlights">' +
-        project.highlights.map(function (h) { return '<li>' + esc(h) + '</li>'; }).join('') + '</ul>'
+        project.highlights.map(function (h) { return '<li>' + inline(h) + '</li>'; }).join('') + '</ul>'
       : '';
     var links = (project.links || []).filter(function (l) { return l.url; }).map(function (l) {
       return '<a class="btn btn-ghost" href="' + esc(l.url) + '" target="_blank" rel="noopener">' + esc(l.label) + ' ↗</a>';
@@ -222,7 +222,7 @@
       image +
       '<p class="dialog-tag"><span class="' + statusClass(project.status) + '">' + esc(project.status || '') + '</span>' + (project.year ? ' · ' + esc(project.year) : '') + '</p>' +
       '<h2 id="dialogTitle">' + esc(project.title) + '</h2>' +
-      '<p class="dialog-tagline">' + esc(project.tagline || '') + '</p>' +
+      '<p class="dialog-tagline">' + inline(project.tagline || '') + '</p>' +
       desc +
       highlights +
       demo +
@@ -417,7 +417,7 @@
     var grid = document.getElementById('projectsGrid');
     if (!grid) return;
     grid.addEventListener('click', function (e) {
-      if (e.target.closest('.card-actions a')) return;
+      if (e.target.closest('a')) return;
       var tryBtn = e.target.closest('[data-action="try-demo"]');
       if (tryBtn) {
         openProject(tryBtn.closest('.project-card').getAttribute('data-id'), true);

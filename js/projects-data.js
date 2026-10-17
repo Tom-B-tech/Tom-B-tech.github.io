@@ -39,7 +39,7 @@ var PROJECTS = [
   {
     id: "soft-robotics",
     title: "Iterative Design of Soft Actuators",
-    tagline: "Soft robotics research presented at the UIUC Undergraduate Research Symposium — actuators improved through build-test-refine cycles and computer-vision validation.",
+    tagline: "Soft robotics research presented at the [UIUC Undergraduate Research Symposium](https://undergradresearch.illinois.edu/events/research-week/symposium/) — actuators improved through build-test-refine cycles and computer-vision validation.",
     category: "research",
     year: "Spring 2026",
     status: "Completed",
@@ -54,7 +54,7 @@ var PROJECTS = [
       "We iterated on twisting pneumatic soft actuators, twisting cable actuators, and anthropomorphic cable actuators.",
       "We used cyclical testing and computer tracking to verify the performance of our designs.",
       "We used topology optimization to iterate on a compliant gripper mechanism.",
-      "We presented our research of the whole semester at University of Illinois Urbana-Champaign’s Undergraduate Research Symposium to judges, professors, and other presenters."
+      "We presented our research of the whole semester at University of Illinois Urbana-Champaign’s [Undergraduate Research Symposium](https://undergradresearch.illinois.edu/events/research-week/symposium/) to judges, professors, and other presenters."
     ],
     stack: ["Soft robotics", "Silicone casting", "3D printing", "Arduino", "OpenCV", "MATLAB", "Fusion 360"],
     links: [
